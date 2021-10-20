@@ -1,0 +1,9 @@
+server:
+  port: 8888
+  
+spring:
+  cloud:    config:      server:
+        git:
+          uri: https://github.com/rodrigomsr2/microsservices_repo
+          search-paths: fornecedor
+          default-label: main
